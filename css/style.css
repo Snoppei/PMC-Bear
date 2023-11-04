@@ -1,0 +1,113 @@
+body {
+    background: rgb(5, 5, 5);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(5, 5, 5, 0.5);
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    z-index: 3;
+} 
+
+.banner{
+    background: url(../images/bear_back.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: cover;
+    background-blend-mode: hard-light;
+    color: rgb(221, 221, 221);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+    /* width: 100vw; */
+    /* padding: 100px calc(50% - 600px); */
+}
+
+.banner:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav>a {
+    margin-left: 4px;
+    margin-right: 4px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 7px;
+    text-decoration: none;
+    color:rgb(221, 221, 221);
+    background-color: black;
+}
+
+@keyframes navigation {
+    0% {
+        transform: scale(1.0);
+    }
+    33% {
+        transform: scale(1.5);
+    }
+    66% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+/* .darker_bg {
+    background-color: rgb(5, 5, 5);
+} */
+
+nav>a:hover{ 
+
+    /* dodelat */
+
+    /* animation-name: navigation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; */
+    transform: scale(1.1);
+    
+}
+
+.block_2 {
+    color: #fff;
+}
+
+.block_1 {
+    color: #fff;
+}
+
+/* .logo {
+} */
+
+.bear_icon {
+    height: 60px;
+}
+
+/* footer {
+
+} */
