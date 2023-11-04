@@ -9,19 +9,23 @@ header {
     top: 0;
     background-color: rgba(5, 5, 5, 0.5);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 5px;
-    z-index: 3;
+    margin-left: 300px;
+    margin-right: 300px;
+    z-index: 5;
 } 
 
 .banner{
+    padding-top: 5px;
+    padding-bottom: 5px;
     background: url(../images/bear_back.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: cover;
     background-blend-mode: hard-light;
-    color: rgb(221, 221, 221);
-    height: 100vh;
+    color: #fff;
+    height: 800px;
     width: 100vw;
     top: 0;
     left: 0;
@@ -32,12 +36,30 @@ header {
     /* padding: 100px calc(50% - 600px); */
 }
 
+.card_container {
+    margin-left: 300px;
+    margin-right: 300px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.card {
+    background-color: rgba(5, 5, 5, 0.9);
+    height: 50%;
+    width: 40%;
+    border: 2px solid rgb(31, 31, 31, 0);
+    border-radius: 30px;
+    z-index: 2;
+}
+
 .banner:before {
 	content: '';
 	display: block;
 	width: 100%;
 	height: 100%;
-	position: relative;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -48,7 +70,7 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
