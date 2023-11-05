@@ -1,39 +1,117 @@
 body {
     background: rgb(5, 5, 5);
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+}
+
 header {
+    height: 70px;
     position: sticky;
     top: 0;
     background-color: rgba(5, 5, 5, 0.5);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 5px;
-    margin-left: 300px;
-    margin-right: 300px;
+    padding-left: 300px;
+    padding-right: 300px;
     z-index: 5;
 } 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>a {
+    margin-left: 4px;
+    margin-right: 4px;
+    border: 2px solid #b6b6b6;
+    border-radius: 10px;
+    padding: 7px;
+    text-decoration: none;
+    color:rgb(221, 221, 221);
+    background-color: black;
+}
+
+nav>a:hover{ 
+
+    /* dodelat */
+
+    /* animation-name: navigation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; */
+    transform: scale(1.1);
+    
+}
 
 .banner{
     padding-top: 5px;
     padding-bottom: 5px;
     background: url(../images/bear_back.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: cover;
+    background-size: cover;
+    background-position: top;
     background-blend-mode: hard-light;
-    color: #fff;
-    height: 800px;
+    align-items: center;
+    color: #b6b6b6;
+    height: 90vh;
     width: 100vw;
+
+    
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    flex-direction: column;
+    
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    /* right: 0; */
+    /* bottom: 0; */
     position: relative;
     /* width: 100vw; */
     /* padding: 100px calc(50% - 600px); */
+}
+
+.banner h1 {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.banner h2 {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.banner::before {
+	content: '';
+	/* display: block; */
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+.info {
+    height: 1600px;
 }
 
 .card_container {
@@ -47,42 +125,12 @@ header {
 
 .card {
     background-color: rgba(5, 5, 5, 0.9);
-    height: 50%;
-    width: 40%;
-    border: 2px solid rgb(31, 31, 31, 0);
+    height: 80%;
+    width: 100%;
+    border: 2px solid #b6b6b6;
     border-radius: 30px;
     z-index: 2;
-}
-
-.banner:before {
-	content: '';
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color:rgba(0, 0, 0, .5);
-    z-index: 1;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav>a {
-    margin-left: 4px;
-    margin-right: 4px;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    padding: 7px;
-    text-decoration: none;
-    color:rgb(221, 221, 221);
-    background-color: black;
+    color: #b6b6b6;
 }
 
 @keyframes navigation {
@@ -104,23 +152,10 @@ nav>a {
     background-color: rgb(5, 5, 5);
 } */
 
-nav>a:hover{ 
 
-    /* dodelat */
-
-    /* animation-name: navigation;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out; */
-    transform: scale(1.1);
-    
-}
 
 .block_2 {
-    color: #fff;
-}
-
-.block_1 {
-    color: #fff;
+    color: #b6b6b6;
 }
 
 /* .logo {
