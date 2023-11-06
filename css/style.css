@@ -23,8 +23,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    padding-left: 300px;
-    padding-right: 300px;
     z-index: 5;
 } 
 
@@ -112,25 +110,37 @@ nav>a:hover{
 
 .info {
     height: 1600px;
-}
-
-.card_container {
-    margin-left: 300px;
-    margin-right: 300px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    grid-template-rows: repeat(2, 1fr);
+    /* margin-left: 300px;
+    margin-right: 300px; */
     justify-content: space-between;
     height: 100%;
     align-items: center;
+
+}
+
+.container {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
 .card {
     background-color: rgba(5, 5, 5, 0.9);
-    height: 80%;
-    width: 100%;
     border: 2px solid #b6b6b6;
-    border-radius: 30px;
+    border-radius: 10px;
     z-index: 2;
     color: #b6b6b6;
+    padding: 30px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card i {
+    font-size: 4em;
 }
 
 @keyframes navigation {
@@ -164,6 +174,8 @@ nav>a:hover{
 .bear_icon {
     height: 60px;
 }
+
+
 
 /* footer {
 

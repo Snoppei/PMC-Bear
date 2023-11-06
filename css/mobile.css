@@ -1,0 +1,14 @@
+@media (min-width: 600px) and (max-width: 1199px) {
+    .container{
+        padding: 50px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .info {
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+    }
+}
