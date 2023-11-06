@@ -23,6 +23,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
     z-index: 5;
 } 
 
@@ -35,12 +37,12 @@ nav {
 nav>a {
     margin-left: 4px;
     margin-right: 4px;
-    border: 2px solid #b6b6b6;
+    border: none;
     border-radius: 10px;
     padding: 7px;
     text-decoration: none;
     color:rgb(221, 221, 221);
-    background-color: black;
+    background-color: background-color:rgba(0, 0, 0, 0);
 }
 
 nav>a:hover{ 
@@ -112,7 +114,7 @@ nav>a:hover{
     height: 1600px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 40px;
     grid-template-rows: repeat(2, 1fr);
     /* margin-left: 300px;
     margin-right: 300px; */
