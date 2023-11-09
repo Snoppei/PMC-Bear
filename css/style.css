@@ -42,7 +42,7 @@ nav>a {
     padding: 7px;
     text-decoration: none;
     color:rgb(221, 221, 221);
-    background-color: background-color:rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 nav>a:hover{ 
